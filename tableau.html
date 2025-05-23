@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de compétences</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Romain Caner</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Acceuil</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">A propos</a></li>
+                    <li class="nav__item"><a href="tableau.html" class="nav__link">Tableau de competence</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Mes Compétences (BTS SIO)</h2>
+        
+        <div class="skills__container">
+            <div class="button-container">
+                <a href="assets/E5 2025 - Tableau des compétences CANER ROMAIN - Tableau de synthèse Épreuve E4 (3).pdf" target="_blank" class="button button--flex">
+                    Voir mon tableau de compétences en pdf
+                    <i class='bx bx-file-blank button__icon'></i>
+                </a>
+            </div>
+            
+            <div class="competences-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Activités</th>
+                            <th>Gérer le patrimoine informatique</th>
+                            <th>Répondre aux incidents et aux demandes d'assistance et d'évolution</th>
+                            <th>Développer la présence en ligne de l'organisation</th>
+                            <th>Travailler en mode projet</th>
+                            <th>Mettre à disposition des utilisateurs un service informatique</th>
+                            <th>Organiser son développement professionnel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Bloc 1 -->
+                        <tr>
+                            <td class="section-header" colspan="7">Réalisations</td>
+                        </tr>
+                        <tr>
+                            <td>Création d'un compte LinkedIn, d'un CV et d'un portfolio en ligne</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('linkedin-modal')">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Création d'un site web en HTML en mode projet en équipe de 3 (<a href="https://maisondesligues.brandonmolina.fr" target="_blank" class="table-link">voir le site</a>)</td>
+                            <td></td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('html-projet')">✓</td>
+                            <td class="checked" onclick="openModal('html-projet')">✓</td>
+                            <td class="checked" onclick="openModal('html-projet')">✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Planification d'un projet via l'outil Trello</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('trello-projet')">✓</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Site Internet FAQ (<a href="https://romaincaner.github.io/m2l/" target="_blank" class="table-link">voir le site</a>)</td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('faq')">✓</td>
+                            <td class="checked" onclick="openModal('faq')">✓</td>
+                            <td class="checked" onclick="openModal('faq')">✓</td>
+                            <td class="checked" onclick="openModal('faq')">✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Développement d'une application web "AppResto" en groupe de 4 (<a href="https://cazafamilia.brandonmolina.fr" target="_blank" class="table-link">voir le site</a>)</td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('appresto')">✓</td>
+                            <td class="checked" onclick="openModal('appresto')">✓</td>
+                            <td class="checked" onclick="openModal('appresto')">✓</td>
+                            <td class="checked" onclick="openModal('appresto')">✓</td>
+                            <td ></td>
+                        </tr>
+                        <tr>
+                            <td>Développement d'un client lourd en JAVA "RestoSwing" en groupe de 4</td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('restoswing')">✓</td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('restoswing')">✓</td>
+                            <td class="checked" onclick="openModal('restoswing')">✓</td>
+                            <td></td>
+                        </tr>
+
+                        <!-- Bloc 2 -->
+                        <tr>
+                            <td class="section-header" colspan="7">Réalisations en milieu professionnel en cours de première année</td>
+                        </tr>
+                        <tr>
+                            <td>Réalisations des Headers Dynamique</td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('headers-modal')">✓</td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('headers-modal')">✓</td>
+                            <td class="checked" onclick="openModal('headers-modal')">✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Amelioration et fix d'un module signature sur l'ERP</td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('signature')">✓</td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('signature')">✓</td>
+                            <td class="checked" onclick="openModal('signature')">✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Régler un bug d'affichage</td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('bug')">✓</td>
+                            <td></td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('bug')">✓</td>
+                            <td></td>
+                        </tr>
+
+                        <!-- Bloc 3 -->
+                        <tr>
+                            <td class="section-header" colspan="7">Réalisations en milieu professionnel en cours de seconde année</td>
+                        </tr>
+                        <tr>
+                            <td>Peuplement de bases de données</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('bdd')">✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gestion du GIT d'un projet</td>
+                            <td class="checked" onclick="openModal('git')">✓</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('git')">✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hébergement du Site sur CPANEL et gestion de base sur CPANEL</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="checked" onclick="openModal('cpanel')">✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Site réalisé avec une équipe de 4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td> 
+                            <td class="checked" onclick="openModal('site-equipe')">✓</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Modales pour chaque compétence -->
+    
+    <!-- LinkedIn Modal -->
+    <div id="linkedin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('linkedin-modal')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Création de présence professionnelle en ligne</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/linkedin1.png', 'Profil LinkedIn professionnel')">
+                            <img src="assets/preuves/linkedin1.png" alt="Profil LinkedIn">
+                            <figcaption>Profil LinkedIn professionnel</figcaption>
+                        </figure>
+                    </div>
+                    <p>Développement de ma présence professionnelle en ligne à travers LinkedIn et un portfolio personnel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Projet Modal -->
+    <div id="html-projet" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('html-projet')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Projet Maison de la ligue</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/html1.png', 'Page d\'accueil du site')">
+                            <img src="assets/preuves/html1.png" alt="Site web équipe">
+                            <figcaption>Page d'accueil du site et Contribution à la présence en ligne de la Maison des Ligues par la mise en production et l'hébergement du site web statique, le rendant ainsi accessible au public et participant à la valorisation de son image.</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/html2.png', 'Structure du code source')">
+                            <img src="assets/preuves/html2.png" alt="Code source">
+                            <figcaption>Structure du code source</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/html3.png', 'Organisation du projet sur Trello')">
+                            <img src="assets/preuves/html3.png" alt="Trello">
+                            <figcaption>Organisation du projet sur Trello</figcaption>
+                        </figure>
+                    </div>
+                    <p>Création collaborative d'un site web en équipe de 3 personnes, utilisant HTML et CSS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trello Modal -->
+    <div id="trello-projet" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('trello-projet')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Gestion de projet avec Trello</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/trello1.png', 'Organisation du projet sur Trello')">
+                            <img src="assets/preuves/trello1.png" alt="Tableau Trello">
+                            <figcaption>Organisation du projet sur Trello</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/trello2.png', 'Suivi de l\'avancement des tâches')">
+                            <img src="assets/preuves/trello2.png" alt="Suivi des tâches">
+                            <figcaption>Suivi de l'avancement des tâches</figcaption>
+                        </figure>
+                    </div>
+                    <p>Utilisation de Trello pour la planification et le suivi des projets en équipe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Modal -->
+    <div id="faq" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('faq')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Site Internet FAQ</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/faq1.png', 'Interface de la FAQ')">
+                            <img src="assets/preuves/faq1.png" alt="Page FAQ">
+                            <figcaption>Développement de la présence en ligne de l'organisation fictive via le déploiement du site dynamique AppFAQ, participant ainsi à l'évolution d'un site Web exploitant les données de l'organisation.</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="assets/preuves/appfaqIHM.pdf" target="_blank" class="pdf-link">
+                                <i class='bx bx-file-pdf'></i>
+                                Voir le document PDF
+                            </a>
+                            <figcaption>Prise en charge de demandes d'évolution pour l'application AppFAQ, impliquant le suivi de lots de développement spécifiés pour traiter ces demandes. Conception d'une Interface Homme-Machine (IHM) pour visualiser les améliorations proposées avant leur implémentation.</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/html3.png', 'Organisation du projet sur Trello')">
+                            <img src="assets/preuves/html3.png" alt="Trello">
+                            <figcaption>Organisation et suivi du projet sur Trello avec répartition des tâches</figcaption>
+                        </figure>
+                    </div>
+                    <p>Développement d'une FAQ interactive pour faciliter l'accès à l'information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AppResto Modal -->
+    <div id="appresto" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('appresto')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Application Web AppResto CazaFamilia</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/appresto1.png', 'Interface utilisateur de l\'application')">
+                            <img src="assets/preuves/appresto1.png" alt="Interface AppResto">
+                            <figcaption>Interface utilisateur de l'application</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="assets/preuves/apprestoIHM.pdf" target="_blank" class="pdf-link">
+                                <i class='bx bx-file-pdf'></i>
+                                Voir l'IHM proposée
+                            </a>
+                            <figcaption>Traitement de demandes d'évolution pour l'application web de commande de repas AppResto, de la collecte de la demande à la conception d'une IHM pour valider les propositions d'amélioration de l'interface utilisateur avant développement.</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/appresto3.png', 'Suivi des tâches avec Trello')">
+                            <img src="assets/preuves/appresto3.png" alt="Trello">
+                            <figcaption>Suivi des tâches avec Trello</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/appresto4.png', 'Suivi des bugs/incidents')">
+                            <img src="assets/preuves/appresto4.png" alt="Bugs">
+                            <figcaption>Suivi des bugs/incidents</figcaption>
+                        </figure>
+                    </div>
+                    <p>Développement d'une application web de gestion des commandes d'un restaurant en équipe de 4.<br>
+                    Site accessible à : <a href="https://cazafamilia.brandonmolina.fr" target="_blank">https://cazafamilia.brandonmolina.fr</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RestoSwing Modal -->
+    <div id="restoswing" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('restoswing')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Application Java RestoSwing</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/restoswing1.png', 'Interface de l\'application Java')">
+                            <img src="assets/preuves/restoswing1.png" alt="Interface RestoSwing">
+                            <figcaption>Interface de l'application Java</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/restoswing3.png', 'Organisation sur Trello')">
+                            <img src="assets/preuves/restoswing3.png" alt="Trello">
+                            <figcaption>Organisation sur Trello</figcaption>
+                        </figure>
+                    </div>
+                    <p>Développement d'une application de gestion en Java avec interface Swing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Headers Modal -->
+    <div id="headers-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('headers-modal')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Headers Dynamiques</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/headers1.png', 'Exemple de header dynamique 1')">
+                            <img src="assets/preuves/headers.png" alt="Header">
+                            <figcaption>Tableau des plugins Visuel</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/headers2.png', 'Exemple de header dynamique 2')">
+                            <img src="assets/preuves/headers2.png" alt="Header 2">
+                            <figcaption>exemple de comment on ajoute les plugins dans la page grace au $tab_plugins</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/headers3.png', 'Exemple de header dynamique 3')">
+                            <img src="assets/preuves/headers3.png" alt="Header 3">
+                            <figcaption>Cette image represente la page avant la mise en place des plugins dynamiques</figcaption>
+                        </figure>
+                    </div>
+                    <p>Développement de headers dynamiques pour améliorer l'expérience utilisateur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signature Modal -->
+    <div id="signature" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signature')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Module de Signature</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/signature.png', 'Interface du module de signature')">
+                            <img src="assets/preuves/signature.png" alt="Interface signature">
+                            <figcaption>Interface du module de signature</figcaption>
+                        </figure>
+                    </div>
+                    <p>Amélioration du module de signature existant avec Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bug Modal -->
+    <div id="bug" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bug')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Résolution de Bug</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/bug1.png', 'Identification du bug')">
+                            <img src="assets/preuves/bug1.png" alt="Bug initial">
+                            <figcaption>Identification du bug</figcaption>
+                        </figure>
+                    </div>
+                    <p>Diagnostic et résolution d'un bug d'affichage dans l'application.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BDD Modal -->
+    <div id="bdd" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bdd')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Gestion de Base de Données</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/bdd1.png', 'Requêtes SQL de peuplement')">
+                            <img src="assets/preuves/bdd1.png" alt="Requêtes SQL">
+                            <figcaption>Requêtes SQL de peuplement</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/bdd2.png', 'Structure de la base de données')">
+                            <img src="assets/preuves/bdd2.png" alt="Structure BDD">
+                            <figcaption>Structure de la base de données</figcaption>
+                        </figure>
+                    </div>
+                    <p>Conception et peuplement de bases de données pour les projets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Git Modal -->
+    <div id="git" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('git')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Gestion de Version avec Git</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/git1.png', 'Documentation d\'utilisation de git')">
+                            <img src="assets/preuves/git1.png" alt="Git branches">
+                            <figcaption>Documentation d'utilisation de git</figcaption>
+                        </figure>
+                    </div>
+                    <p>Utilisation de Git pour la gestion de version des projets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CPanel Modal -->
+    <div id="cpanel" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cpanel')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Gestion CPanel</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/cpanel1.png', 'Guide d\'utilisation CPanel')">
+                            <img src="assets/preuves/cpanel1.png" alt="Interface CPanel">
+                            <figcaption>Guide d'utilisation et documentation sur CPANEL</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/cpanel2.png', 'Stratégie de déploiement')">
+                            <img src="assets/preuves/cpanel2.png" alt="Configuration">
+                            <figcaption>Stratégie de déploiement avec branches Git</figcaption>
+                        </figure>
+                    </div>
+                    <p>Gestion de l'hébergement web via CPanel et mise en place d'une stratégie de déploiement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site Équipe Modal -->
+    <div id="site-equipe" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('site-equipe')">&times;</span>
+            <div class="proof-content">
+                <div class="proof-section">
+                    <h4>Projet Site Web en Équipe</h4>
+                    <div class="proof-images">
+                        <figure onclick="openZoom('assets/preuves/site1.png', 'Interface du site web')">
+                            <img src="assets/preuves/site1.png" alt="Site équipe">
+                            <figcaption>Interface du site web</figcaption>
+                        </figure>
+                        <figure onclick="openZoom('assets/preuves/site2.png', 'Collaboration sur Discord')">
+                            <img src="assets/preuves/site2.png" alt="Collaboration">
+                            <figcaption>Discussion des bugs et problèmes sur Discord</figcaption>
+                        </figure>
+                    </div>
+                    <p>Développement collaboratif d'un site web en équipe de 4 personnes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de zoom d'image -->
+    <div id="zoom-modal" class="zoom-modal">
+        <span class="zoom-close">&times;</span>
+        <img id="zoom-img" src="" alt="">
+        <div id="zoom-caption" class="zoom-caption"></div>
+        <div class="zoom-controls">
+            <button class="zoom-button" id="zoom-out">-</button>
+            <span class="zoom-level">100%</span>
+            <button class="zoom-button" id="zoom-in">+</button>
+        </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Fonction pour ouvrir le modal de zoom
+        function openZoom(imgSrc, caption) {
+            const modal = document.getElementById('zoom-modal');
+            const modalImg = document.getElementById('zoom-img');
+            const modalCaption = document.getElementById('zoom-caption');
+            
+            modalImg.src = imgSrc;
+            modalCaption.textContent = caption;
+            modal.classList.add('show');
+        }
+
+        // Fermer le modal de zoom
+        document.querySelector('.zoom-close').addEventListener('click', function() {
+            document.getElementById('zoom-modal').classList.remove('show');
+        });
+
+        // Fermer le modal en cliquant en dehors de l'image
+        document.getElementById('zoom-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
