@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Romain Caner</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Acceuil</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
+                        <li class="nav__item"><a href="tableau.html" class="nav__link">Tableau de competence</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projets</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Salut,<br>moi c'est <span class="home__title-color">Romain</span><br>Devellopeur WEB</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="-110" href="assets/img/about.jpg"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">A Propos</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/profil.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Je suis Romain</h2>
+                        <p class="about__text">Jeune Etudiant de 20 ans et fan d'informatique depuis petit, j'ai decidé apres mon bac stmg de faire un BTS SIO option SLAM afin de me diriger dans le devellopement de site web, en dehors du devellopement je suis également un grand fan de basket-ball depuis mes 10 ans et je suis pour les Lakers<p>           
+                    </div>                                   
+                </div>
+            </section>
+          
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Mes Projets</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://cazafamilia.brandonmolina.fr" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="Projet CazaFamilia">
+                        <div class="work__overlay">
+                            <h3 class="work__title">CazaFamilia</h3>
+                            <p class="work__description">Site web de restaurant développé en équipe avec une interface moderne et responsive.</p>
+                        </div>
+                    </a>
+                    <a href="https://appfaq.brandonmolina.fr" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="Projet FAQ">
+                        <div class="work__overlay">
+                            <h3 class="work__title">Application FAQ</h3>
+                            <p class="work__description">Système de gestion de questions fréquentes avec interface utilisateur intuitive.</p>
+                        </div>
+                    </a>
+                    <a href="index.html" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="Projet Stage">
+                        <div class="work__overlay">
+                            <h3 class="work__title">Gestion de Stage</h3>
+                            <p class="work__description">Application web pour la gestion des stages avec authentification et suivi des étudiants.</p>
+                        </div>
+                    </a>
+                    <a href="https://romaincaner.github.io/m2l/" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="Projet Maison de la ligue">
+                        <div class="work__overlay">
+                            <h3 class="work__title">Maison de la ligue</h3>
+                            <p class="work__description">Rassemblement de plusieurs ligues de sport fictives</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!--===== VEILLE TECHNOLOGIQUE =====-->
+            <section class="veille section" id="veille">
+                <h2 class="section-title">Veille Technologique</h2>
+
+                <div class="veille__container bd-grid">
+                    <div class="veille__content">
+                        <h3 class="veille__subtitle">Mes outils de veille</h3>
+                        <div class="veille__tools">
+                            <div class="veille__tool">
+                                <a href="https://www.linkedin.com/in/romain-caner-591a282a0/?originalSubdomain=fr" target="_blank" class="veille__tool-link">
+                                    <i class='bx bxl-linkedin-square'></i>
+                                    <h4>LinkedIn</h4>
+                                    <p>Suivi des actualités et tendances du secteur informatique</p>
+                                </a>
+                            </div>
+                            <div class="veille__tool">
+                                <a href="https://github.com/RomainCaner" target="_blank" class="veille__tool-link">
+                                    <i class='bx bxl-github'></i>
+                                    <h4>GitHub</h4>
+                                    <p>Veille sur les nouveaux frameworks et technologies</p>
+                                </a>
+                            </div>
+                            <div class="veille__tool">
+                                <a href="https://flipboard.com/topic/fr-informatique" target="_blank" class="veille__tool-link">
+                                    <i class='bx bx-task'></i>
+                                    <h4>flipboard</h4>
+                                    <p>Veille informationnelle selon les sujet qui m'interesse</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="veille__subtitle">Mes sujets de veille</h3>
+                        <div class="veille__topics">
+                            <a href="https://flip.it/jaGxQY" class="veille__topic">
+                                <i class='bx bx-shield-quarter'></i>
+                                <div class="veille__topic-content">
+                                    <h4>Cybersécurité</h4>
+                                    <p>Nouvelles menaces d'actualitée</p>
+                                </div>
+                            </a>
+                            <a href="https://flip.it/9ILGuf" class="veille__topic">
+                                <i class='bx bx-shield-quarter'></i>
+                                <div class="veille__topic-content">
+                                    <h4>Cybersécurité</h4>
+                                    <p>Securitée informatique</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Romain</p>
+            <div class="footer__social">
+                <a href="https://github.com/RomainCaner" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/romain.cnr/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Caner Romain. tout droit reservés</p>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+
+    </body>
+</html>
